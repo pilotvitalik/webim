@@ -1,0 +1,26 @@
+//========================================
+//	Styles for background headerfooter
+//========================================
+.header,
+.footer{
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	width: 100%;
+	padding: 35px 0 35px 0;
+	margin: 0;
+	background: url('../img/header.png') no-repeat;
+	background-size: cover;
+	box-shadow: 0 3px 7px rgba(0,0,2,0.25);
+	z-index: 111;
+}
+.footer{
+	padding: 0 0 283px 0;
+	background: url('../img/footer.png') no-repeat;
+	box-shadow: none;
+	.copyright,
+	.contact,
+	.time{
+		display: none;
+	}
+}

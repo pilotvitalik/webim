@@ -1,0 +1,91 @@
+.reg,
+.menu {
+  display: block;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  width: 14.4047619%;
+  height: 19px;
+  padding: 0;
+  margin: 0 0 0 4.16666667%;
+}
+.reg p,
+.menu p {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  margin: 0;
+  color: #373c6d;
+}
+.reg p:last-child,
+.menu p:last-child {
+  margin: 0 auto 0 13.8%;
+}
+.menu {
+  width: 32.14285714%;
+  margin: 0 0 0 auto;
+  padding: 0;
+}
+.menu p {
+  margin: 0 2.97619048% 0 0;
+}
+.menu > p:last-child {
+  display: inline-block;
+  margin: 0;
+}
+img {
+  margin: 0 4.16666667% 0 1.78571429%;
+}
+.install {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  margin: 0;
+  padding: 3.8% 0 5.6% 0;
+}
+.install h3,
+.install p,
+.install div {
+  display: inline-block;
+  position: relative;
+  margin: 0 42.26190476% 0 19.64285714%;
+}
+.install p {
+  margin: 3.2% 33.33333333% 0 19.64285714%;
+}
+.install div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0;
+  margin: 4.9% 0 0 0;
+}
+.install div button {
+  display: inline-block;
+  width: 18.75%;
+  height: 100%;
+  margin: 0;
+  border: none;
+  line-height: 3rem;
+  border-radius: 24px;
+  padding: 0;
+  margin: 0 1.48809524% 0 19.64285714%;
+  outline: none;
+  background: #2cd3b8;
+}
+.install div button:last-child {
+  margin: 0 42.26190476% 0 auto;
+  background: transparent;
+  border: solid 1px #393e6b;
+}

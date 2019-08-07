@@ -25,6 +25,24 @@ let conf = {
 						'less-loader'
 				]
 			},
+			{
+      			test: /\.(jpe?g|png|gif|svg)$/i,
+      			use: [
+			        'url-loader?limit=10000',
+			        'img-loader'
+			      ]
+			    },
+			   {
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+            },
+          },
+        ],
+      },
 		]
 	}
 };

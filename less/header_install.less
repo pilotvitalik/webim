@@ -1,0 +1,82 @@
+@width: 100/1680%;
+@bdef: solid 1px red;
+@newF: 100/36%;
+
+.reg,
+.menu{
+	display: block;
+	flex-direction: row;
+	position: relative;
+	width: 242*@width;
+	height: 19px;
+	padding: 0;
+	margin: 0 0 0 70*@width;
+	p{
+		display: inline-block;
+		position: relative;
+		width: auto;
+		margin: 0;
+		color: #373c6d;
+	}
+	p:last-child{
+		margin: 0 auto 0 13.8%;
+	}
+}
+.menu{
+	width: 540*@width;
+	margin: 0 0 0 auto;
+	padding: 0;
+	p{
+		margin:0 50*@width 0 0;
+	}
+	&>p:last-child{
+		display: inline-block;
+		margin: 0;
+	}
+}
+img{
+	margin: 0 70*@width 0 30*@width;
+}
+.install{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin: 0;
+	padding: 3.8% 0 5.6% 0;
+	h3,
+	p,
+	div{
+		display: inline-block;
+		position: relative;
+		margin:  0 710*@width 0 330*@width;
+	}
+	p{
+
+		margin: 3.2% 560*@width 0 330*@width;
+	}
+	div{
+		display: flex;
+		flex-direction: row;
+		padding: 0;
+		margin: 4.9% 0 0 0;
+			button{
+				display: inline-block;
+				width: 315*@width;
+				height: 100%;
+				padding: 0;
+				margin:  0;
+				border: none;
+				line-height: 3rem;
+				border-radius: 24px;
+				padding: 0;
+				margin:  0 25*@width 0 330*@width;
+				outline: none;
+				background: #2cd3b8;
+			}
+			button:last-child{
+				margin:  0 710*@width 0 auto;
+				background: transparent;
+				border: solid 1px #393e6b;
+			}
+	}
+}

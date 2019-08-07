@@ -1,0 +1,85 @@
+@font: 2.6vw;
+@newF: 100/36%;
+
+@media(min-width:800px){
+//=================================
+//		Common setup
+//=================================
+body,
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+	padding: 0;
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: @font;
+}
+//=================================
+//		Color of block
+//=================================
+.grey{
+	width: 100%;
+	height: auto;
+	background: #eff4f4;
+}
+//=================================
+//		Fonts
+//=================================
+.header{
+	font-size: 13*100/28%;
+	text-transform: uppercase;
+}
+.h3-font36,
+.h3-font30{
+	color: #393e6b;
+	font-size: 100%;
+	line-height: 20px;
+	text-transform: uppercase;
+	letter-spacing: 0.9px;
+}
+.h3-font30{
+	font-size: 30*100/36%;
+	letter-spacing: 0.75px;
+}
+.p-font,
+.p-font--h5p{
+	color: #74757b;
+	font-size: 16*@newF;
+	line-height: 24px;
+	letter-spacing: 0.4px;
+}
+.p-font--h5{
+	color: #0da088;
+	font-size: 24*@newF;
+	line-height: 24px;
+}
+.p-font--h5p{
+	line-height: 36px;
+}
+.p-font--18px,
+.p-font--18px-b{
+	color: #393e6b;
+	font-size: 18*@newF;
+	line-height: 24px;
+}
+.p-font--18px-b{
+	font-size: 133%;
+	font-weight: 700;
+}
+.left-btn,
+.right-btn{
+	color: #ffffff;
+	font-size: 14*@newF;
+	line-height: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.right-btn{
+	color: #393e6b;
+}
+.footer{
+	font-size: 10*100/28%;
+}
+}
