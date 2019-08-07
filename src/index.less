@@ -1,5 +1,7 @@
 @font: 2.6vw;
 @newF: 100/36%;
+@width: 100/1680%;
+@bdef: solid 1px red;
 
 @media(min-width:800px){
 //=================================
@@ -78,5 +80,161 @@ body,
 }
 .footer{
 	font-size: 10*100/28%;
+}
+//========================================
+//	Styles for background headerfooter
+//========================================
+.header,
+.footer{
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	width: 100%;
+	padding: 35px 0 35px 0;
+	margin: 0;
+	/* background: url('../img/header.png') no-repeat; */
+	background-size: cover;
+	box-shadow: 0 3px 7px rgba(0,0,2,0.25);
+	z-index: 111;
+}
+.footer{
+	padding: 0 0 283px 0;
+	/* background: url('../img/footer.png') no-repeat; */
+	box-shadow: none;
+	.copyright,
+	.contact,
+	.time{
+		display: none;
+	}
+}
+//========================================
+//	Styles for header&footer
+//========================================
+.reg,
+.menu{
+	display: block;
+	flex-direction: row;
+	position: relative;
+	width: 242*@width;
+	height: 19px;
+	padding: 0;
+	margin: 0 0 0 70*@width;
+	p{
+		display: inline-block;
+		position: relative;
+		width: auto;
+		margin: 0;
+		color: #373c6d;
+	}
+	p:last-child{
+		margin: 0 auto 0 13.8%;
+	}
+}
+.menu{
+	width: 540*@width;
+	margin: 0 0 0 auto;
+	padding: 0;
+	p{
+		margin:0 50*@width 0 0;
+	}
+	&>p:last-child{
+		display: inline-block;
+		margin: 0;
+	}
+}
+img{
+	margin: 0 70*@width 0 30*@width;
+}
+.install{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin: 0;
+	padding: 3.8% 0 5.6% 0;
+	h3,
+	p,
+	div{
+		display: inline-block;
+		position: relative;
+		margin:  0 710*@width 0 330*@width;
+	}
+	p{
+
+		margin: 3.2% 560*@width 0 330*@width;
+	}
+	div{
+		display: flex;
+		flex-direction: row;
+		padding: 0;
+		margin: 4.9% 0 0 0;
+			button{
+				display: inline-block;
+				width: 315*@width;
+				height: 100%;
+				padding: 0;
+				margin:  0;
+				border: none;
+				line-height: 3rem;
+				border-radius: 24px;
+				padding: 0;
+				margin:  0 25*@width 0 330*@width;
+				outline: none;
+				background: #2cd3b8;
+			}
+			button:last-child{
+				margin:  0 710*@width 0 auto;
+				background: transparent;
+				border: solid 1px #393e6b;
+			}
+	}
+}
+//========================================
+//	Styles for install from all secctions
+//========================================
+.easyInst{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	padding: 3.6% 0 1.1% 0;
+	margin: 0;
+	h3,p,div{
+		display: inline-block;
+	}
+	h3{
+		margin: 0 0 0 325*@width;
+	}
+	p{
+		margin: 2.1% 0 0 325*@width;
+	}
+	div{
+		display: flex;
+		flex-direction: row;
+		position: relative;
+		border: @bdef;
+		width: 100%;
+		margin: 6% 0 0 0;
+		.inst-reg{
+		display: flex;
+		flex-direction: row;
+		position: relative;
+			div{
+				width: 100px;
+				height: 50px;
+				background-position: 50%;
+
+			}
+		}
+	}
+
+}
+.easyInst:before{
+	content:'';
+	display: block;
+	position: absolute;
+	width: 100px;
+	height: 85px;
+	top: 117px;
+	left: 250px;
+	border: @bdef;
 }
 }

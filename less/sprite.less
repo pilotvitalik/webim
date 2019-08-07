@@ -1,0 +1,171 @@
+@font: 2.6vw;
+@newF: 100/36%;
+@width: 100/1680%;
+@bdef: solid 1px red;
+
+.easyInst{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	padding: 6.2% 0 5.8% 0;
+	margin: 0;
+	h3,p,div{
+		display: inline-block;
+	}
+	h3{
+		margin: 0 0 0 325*@width;
+	}
+	p{
+		margin: 2.1% 0 0 325*@width;
+	}
+	&>div{
+		display: flex;
+		flex-direction: row;
+		position: relative;
+		width: 100%;
+		margin: 6% 0 0 0;
+		.inst-reg,
+		.inst-HTML{
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			height: 148px;
+			padding: 0;
+			margin: 0 0 0 285*@width;
+				&>div{
+					display: block;
+					width: 51px;
+					height: 51px;
+					background: url(../img/sprite.svg) no-repeat;
+					background-position: -4px -4px;
+					border: none;
+				}
+				p,
+				span{
+					font-family: 'Ubuntu', sans-serif;
+					font-size: 18*@newF;
+					line-height: 24px;
+					letter-spacing: 0.45px;
+					color: #00af99;
+				}
+				span{
+					display: inline-block;
+					position: absolute;
+					color: #74757b;
+					font-size: 150*@newF;
+					font-weight: 700;
+					line-height: 24px;
+					margin: 0;
+					top: 43px;
+					left: -10px;
+					opacity: 0.3;
+					z-index: -111;
+				}
+		}
+		.inst-HTML{
+			margin: 0 0 0 100*@width;
+			width: 250px;
+			&>div{
+				display: block;
+				width: 51px;
+				height: 54px;
+				background: url(../img/sprite.svg) no-repeat;
+				background-position: -58px -3px;
+				border: none;
+				margin: 45px 0 0 35px;
+				z-index: 111;
+			}
+			p{
+				display: inline-block;
+				padding: 0 0 0 35px;
+				margin: 25px 0 0 0;
+			}
+		}
+		.inst-reg{
+			span:last-child{
+					margin-left: -5px;
+				}
+			div{
+				margin: 40px 0 0 35px;
+			}
+			p{
+				display: inline-block;
+				padding: 0 0 0 35px;
+				margin: 32px 0 0 0;
+			}			
+		}
+	}
+
+}
+.installHTML{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	padding: 6.7% 0 6.1% 0;
+	h3{
+		margin: 0 0 5.6% 330*@width;
+	}
+	div{
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		width: 100%;
+		margin: 2.6% 0 0 0;
+		span{
+			display: inline-block;
+			position: absolute;
+			width: 8*@width;
+			padding-top: 0.65%;
+			background: #3b4269;
+			border-radius: 100%;
+			margin: 1% 0 0 330*@width;
+			float: left;
+		}
+		h5,p{
+			margin: 0 0 0 365*@width;
+		}
+	}
+	&>div:nth-child(2){
+		margin: 0;
+	}
+}
+.installApp{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	padding: 6.2% 0 5.8% 0;
+	h3,p{
+		margin: 0 0 0 330*@width;
+	}
+	p{
+		margin: 2.2% 0 0 330*@width;
+	}
+	div{
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		width: 100%;
+		margin: 2.6% 0 0 0;
+		span{
+			display: inline-block;
+			position: absolute;
+			width: 8*@width;
+			padding-top: 0.65%;
+			background: #3b4269;
+			border-radius: 100%;
+			margin: 1% 0 0 330*@width;
+			float: left;
+		}
+		h5,p{
+			margin: 0 0 0 365*@width;
+		}
+		p{
+			display: inline-block;
+			width: 974*@width;
+			padding: 0;
+		}
+	}
+	&>div:nth-child(3){
+		margin: 4.6% 0 0 0;
+	}
+}
