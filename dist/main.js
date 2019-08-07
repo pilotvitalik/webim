@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"body {\\n  width: 100%;\\n  height: 1000px;\\n  background: red;\\n}\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/index.less?./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"@media (min-width: 900px) {\\n  p {\\n    font-family: 'Ubuntu', sans-serif;\\n  }\\n}\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/index.less?./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -129,7 +129,7 @@ eval("\n\nvar stylesInDom = {};\n\nvar isOldIE = function isOldIE() {\n  var mem
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _index = __webpack_require__(/*! ./index.less */ \"./src/index.less\");\n\nvar _index2 = _interopRequireDefault(_index);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nconsole.log('Hello world');\n\n//const css = require('./index.less');\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("\n\nvar _index = __webpack_require__(/*! ./index.less */ \"./src/index.less\");\n\nvar _index2 = _interopRequireDefault(_index);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
