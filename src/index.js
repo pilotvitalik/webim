@@ -1,1 +1,1 @@
-console.log('Hello wor');
+import less from './index.less';
