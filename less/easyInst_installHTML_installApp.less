@@ -34,11 +34,8 @@
 			margin: 0 0 0 285*@width;
 				&>div{
 					display: block;
-					width: 51px;
-					height: 51px;
 					background: url(../img/sprite.svg) no-repeat;
 					background-position: -4px -4px;
-					border: none;
 				}
 				p,
 				span{
@@ -114,10 +111,10 @@
 		span{
 			display: inline-block;
 			position: absolute;
-			width: 8*@width;
-			padding-top: 0.65%;
+			width: 8px;
+			height: 8px;
 			background: #3b4269;
-			border-radius: 100%;
+			border-radius: 50%;
 			margin: 1% 0 0 330*@width;
 			float: left;
 		}
@@ -133,12 +130,17 @@
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	padding: 6.2% 0 5.8% 0;
+	padding: 5.8% 0 5.8% 0;
 	h3,p{
 		margin: 0 0 0 330*@width;
+		line-height: 40px;
+		br:nth-child(2){
+			display: none;
+		}
 	}
 	p{
 		margin: 2.2% 0 0 330*@width;
+		line-height: 24px;
 	}
 	div{
 		display: flex;
@@ -149,10 +151,10 @@
 		span{
 			display: inline-block;
 			position: absolute;
-			width: 8*@width;
-			padding-top: 0.65%;
+			width: 8px;
+			height: 8px;
 			background: #3b4269;
-			border-radius: 100%;
+			border-radius: 50%;
 			margin: 1% 0 0 330*@width;
 			float: left;
 		}
@@ -161,7 +163,6 @@
 		}
 		p{
 			display: inline-block;
-			width: 974*@width;
 			padding: 0;
 			margin: 1.2% 0 0 365*@width;
 			line-height: 55*@newF;
@@ -169,5 +170,171 @@
 	}
 	&>div:nth-child(3){
 		margin: 4.6% 0 0 0;
+	}
+}
+
+@media(max-width:750px){
+	@font: 6.7vw;
+	@newF: 100/48%;
+	@width: 100/750%;
+	@bdef: solid 1px red;
+	.easyInst{
+		h3{
+			height: 85px;
+			margin: 60px 0 93px 68*@width;
+			padding: 0;
+			line-height: 45px;
+			letter-spacing: 2.4px;
+		}
+		p{
+			height: 61px;
+			margin: 0 0 60px 68*@width;
+			width: 70%;
+			line-height: 36px;
+		}
+		.inst-reg,
+		.inst-HTML{
+			height: 157px;
+			margin: 0 0 87px 66*@width !important;
+			&>div{
+				width: 51px;
+				height: 52px;
+				transform: scale(1.41176,1.41176);
+				margin: 0;
+				background-position: -3px -4px !important;
+				margin: 20px 0 17px 40px !important;
+			}
+			p{
+				font-size: 26*@newF;
+				padding: 0 0 0 41px;
+				height: 23px;
+			}
+			span:last-child{
+				position: absolute;
+				top: 23px;
+				left: -8px;
+				font-size: 150*@newF;
+			}
+		}
+		.inst-HTML{
+			margin: 0 0 0 130*@width !important;
+		}
+	}
+	.installHTML{
+		padding-bottom: 78px;
+		h3{
+			margin: 70px 0 61px 68*@width;
+			line-height: 55*@newF
+		}
+		div{
+			margin-top: 70px;
+			span{
+				margin-left: 68*@width;
+				margin-top: 15px;
+				width: 11px;
+				height: 11px !important;
+				border-radius: 50% !important;
+			}
+			h5{
+				line-height: 35px;
+				margin-left: 107*@width;
+			}
+			p{
+				width: 75%;
+				margin-top: 35px;
+				margin-left: 107*@width;
+			}
+
+		}
+		div:first-child{
+			margin: 0;
+		}
+	}
+	.installApp{
+		padding: 0 0 60px 0;
+		h3{
+			margin: 94px 0 61px 68*@width;
+			line-height: 50px;
+			letter-spacing: 2.4px;
+		}
+		p{
+			width: 75%;
+			margin-left: 68*@width;
+			margin-bottom: 22px;
+		}
+		div{
+			margin-top: 70px;
+			span{
+				margin-left: 68*@width;
+				margin-top: 15px;
+				width: 11px;
+				height: 11px !important;
+				border-radius: 50% !important;
+			}
+			h5{
+				width: 55%;
+				line-height: 35px;
+				margin-left: 107*@width;
+			}
+			p{
+				width: 75%;
+				margin-top: 35px;
+				margin-left: 107*@width;
+			}
+
+		}
+		div:first-child{
+			margin: 0;
+		}
+	}
+
+}
+@media(min-width:751px){
+	@font: 6.7vw;
+	@newF: 100/48%;
+	@width: 100/750%;
+	@bdef: solid 1px red;
+	.easyInst{
+		h3{
+			br{
+				display: none;
+			}
+		}
+		p{
+			br{
+				display: none;
+			}
+		}
+		.inst-reg,
+		.inst-HTML{
+				&>div{
+					width: 51px;
+					height: 51px;
+				}
+			}
+	}
+	.installHTML{
+		h3{
+			br{
+				display: none;
+			}
+		}
+		&>div{
+			h5{
+				br{
+					display: none;
+				}
+			}
+		}
+	}
+	.installApp{
+		div{
+			h5{
+				br{
+				display: none;
+			}	
+			}
+			
+		}
 	}
 }

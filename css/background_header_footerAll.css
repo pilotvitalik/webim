@@ -1,45 +1,28 @@
 .header,
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   position: relative;
   width: 100%;
   padding: 35px 0 35px 0;
   margin: 0;
   background: url('../img/header.png') no-repeat;
   background-size: cover;
-  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 2, 0.25);
-          box-shadow: 0 3px 7px rgba(0, 0, 2, 0.25);
+  box-shadow: 0 3px 7px rgba(0, 0, 2, 0.25);
   z-index: 111;
 }
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   position: relative;
   height: 283px;
   padding: 0 0 0 0;
   background: url('../img/footer.png') no-repeat;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 .footer .copyright {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   position: absolute;
   margin: 55px 0 0 4.16666667%;
   width: 11.01190476%;
@@ -63,13 +46,8 @@
   margin: 0;
 }
 .footer .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   position: relative;
   width: 26.78571429%;
   height: 165px;
@@ -79,13 +57,8 @@
   color: #adb2c4;
 }
 .footer .contact .telCom {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   width: 100%;
   height: 30px;
   padding: 0;
@@ -108,16 +81,9 @@
 }
 .footer .contact .telMsk,
 .footer .contact .telSpb {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   height: 45px;
   margin: 15px 0 0 0;
 }
@@ -145,17 +111,12 @@
   letter-spacing: 1px;
 }
 .footer .time {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   position: relative;
   width: 26.78571429%;
   height: 200px;
-  margin: 55px 6.25% 0 auto;
+  margin: 55px 0 0 auto;
 }
 .footer .time p:first-child,
 .footer .time p:nth-child(2),
@@ -182,16 +143,9 @@
   color: #fff;
 }
 .footer .time .social {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
   width: 40%;
   height: 20px;
   margin-top: 18px;
@@ -230,4 +184,10 @@
   background: url(../img/footer_mes.png) no-repeat;
   background-position: -2px -2px;
   border-radius: 50%;
+}
+@media (max-width: 750px) {
+  .header {
+    background-image: none;
+    height: 150px;
+  }
 }

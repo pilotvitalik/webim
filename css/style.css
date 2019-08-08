@@ -1,78 +1,117 @@
-@media (min-width: 800px) {
-  body,
+@media (min-width: 751px) {
   .wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-    height: auto;
-    padding: 0;
-    margin: 0;
-    font-family: 'Ubuntu', sans-serif;
     font-size: 2.6vw;
-  }
-  .grey {
-    width: 100%;
-    height: auto;
-    background: #eff4f4;
-  }
-  .header {
-    font-size: 46.42857143%;
-    text-transform: uppercase;
-  }
-  .h3-font36,
-  .h3-font30 {
-    color: #393e6b;
-    font-size: 100%;
-    line-height: 20px;
-    text-transform: uppercase;
-    letter-spacing: 0.9px;
-  }
-  .h3-font30 {
-    font-size: 83.33333333%;
-    letter-spacing: 0.75px;
   }
   .p-font,
   .p-font--h5p {
-    color: #74757b;
     font-size: 44.44444444%;
-    line-height: 24px;
-    letter-spacing: 0.4px;
   }
   .p-font--h5 {
-    color: #0da088;
     font-size: 66.66666667%;
-    line-height: 24px;
-  }
-  .p-font--h5p {
-    line-height: 36px;
   }
   .p-font--18px,
   .p-font--18px-b {
-    color: #393e6b;
     font-size: 50%;
-    line-height: 24px;
-  }
-  .p-font--18px-b {
-    font-size: 133%;
-    font-weight: 700;
   }
   .left-btn,
   .right-btn {
-    color: #ffffff;
     font-size: 38.88888889%;
-    line-height: 16px;
-    text-transform: uppercase;
-    font-weight: 700;
   }
+}
+@media (max-width: 750px) {
+  .wrapper {
+    font-size: 6.7vw;
+  }
+  .h3-font36,
+  .h3-font30 {
+    display: inline-block;
+    width: 100%;
+    font-size: 6.7vw;
+  }
+  .p-font,
+  .p-font--h5p {
+    font-size: 48.61111111%;
+  }
+  .p-font--h5 {
+    font-size: 55.55555556%;
+  }
+  .p-font--18px,
+  .p-font--18px-b {
+    font-size: 50%;
+  }
+  .left-btn,
   .right-btn {
-    color: #393e6b;
+    font-size: 38.88888889%;
   }
-  .footer {
-    font-size: 35.71428571%;
-  }
+}
+body,
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+.grey {
+  width: 100%;
+  height: auto;
+  background: #eff4f4;
+}
+.header {
+  font-size: 46.42857143%;
+  text-transform: uppercase;
+}
+.h3-font36,
+.h3-font30 {
+  color: #393e6b;
+  font-size: 100%;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+}
+.h3-font30 {
+  font-size: 83.33333333%;
+  letter-spacing: 0.75px;
+}
+.p-font,
+.p-font--h5p {
+  color: #74757b;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
+.p-font--h5 {
+  color: #0da088;
+  line-height: 24px;
+}
+.p-font--h5p {
+  line-height: 36px;
+}
+.p-font--18px,
+.p-font--18px-b {
+  color: #393e6b;
+  line-height: 24px;
+}
+.p-font--18px-b {
+  font-size: 133%;
+  font-weight: 700;
+}
+.left-btn,
+.right-btn {
+  color: #ffffff;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.right-btn {
+  color: #393e6b;
+}
+.footer {
+  font-size: 35.71428571%;
 }

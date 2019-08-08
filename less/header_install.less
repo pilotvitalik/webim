@@ -2,6 +2,9 @@
 @bdef: solid 1px red;
 @newF: 100/36%;
 
+.gamb{
+	display: none;
+}
 .reg,
 .menu{
 	display: block;
@@ -34,8 +37,12 @@
 		margin: 0;
 	}
 }
-img{
+.img{
+	background: url(../img/header_logo.png) no-repeat;
+	width: 116px;
+	height: 30px;
 	margin: 0 70*@width 0 30*@width;
+	border: none;
 }
 .install{
 	display: flex;
@@ -51,8 +58,10 @@ img{
 		margin:  0 710*@width 0 330*@width;
 	}
 	p{
-
 		margin: 3.2% 560*@width 0 330*@width;
+		br{
+			display: none;
+		}
 	}
 	div{
 		display: flex;
@@ -62,7 +71,7 @@ img{
 			button{
 				display: inline-block;
 				width: 315*@width;
-				height: 100%;
+				height: 48px;
 				padding: 0;
 				margin:  0;
 				border: none;
@@ -78,5 +87,92 @@ img{
 				background: transparent;
 				border: solid 1px #393e6b;
 			}
+	}
+}
+@media(max-width: 750px){
+@width: 100/750%;
+	.header{
+		padding: 0;
+		.gamb{
+			display: flex;
+			flex-direction: column;
+			position: absolute;
+			justify-content: space-between;
+			width: 43px;
+			height: 45px;
+			margin: 52.5px 0 0 60px;
+			span{
+				width: 100%;
+				height: 5px;
+				background: #3fd6bc;
+			}
+		}
+		.reg{
+			display: none;
+			flex-direction: column;
+			justify-content: space-between;
+			position: absolute;
+			width: 30%;
+			height: 100px;
+			margin: 0;
+			background: #fff;
+			top: 200px;
+			p{
+				margin: 0;
+				height: 59.5px;
+				font-size: 110%;
+				padding: 10px 0 0 10px;
+			}
+			p:first-child{
+				border-bottom: solid 1px grey;
+			}
+		}
+		.menu{
+			display: none;
+			flex-direction: column;
+			justify-content: space-between;
+			position: absolute;
+			width: 30%;
+			height: 200px;
+			margin: 0;
+			background: #fff;
+			left: 0;
+			p{
+				height: 50px;
+				padding: 10px 0 0 10px;
+				font-size: 110%;
+				border-bottom: solid 1px grey;
+				margin: 0;
+			}
+		}
+		.img{
+			width: 229px;
+			height: 57px;
+			margin: auto;
+			background: url(../img/logo_mob.png);
+		}
+	}
+	.install{
+		h3, p{
+			margin: 90px 0 0 68*@width;
+		}
+		p{
+			width: 75%;
+			margin-top: 70px;
+			margin-bottom: 94px;
+		}
+		.price{
+			flex-direction: column;
+			justify-content: space-between;
+			height: 212px;
+			margin-bottom: 77px;
+			button,
+			button:last-child{
+				width: 624px;
+				height: 90px;
+				margin: 0 0 0 68*@width;
+				border-radius: 45px;
+			}
+		}
 	}
 }

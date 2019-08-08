@@ -1,3 +1,6 @@
+.gamb {
+  display: none;
+}
 .reg,
 .menu {
   display: block;
@@ -35,8 +38,12 @@
   display: inline-block;
   margin: 0;
 }
-img {
+.img {
+  background: url(../img/header_logo.png) no-repeat;
+  width: 116px;
+  height: 30px;
   margin: 0 4.16666667% 0 1.78571429%;
+  border: none;
 }
 .install {
   display: -webkit-box;
@@ -60,6 +67,9 @@ img {
 .install p {
   margin: 3.2% 33.33333333% 0 19.64285714%;
 }
+.install p br {
+  display: none;
+}
 .install div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,7 +84,7 @@ img {
 .install div button {
   display: inline-block;
   width: 18.75%;
-  height: 100%;
+  height: 48px;
   margin: 0;
   border: none;
   line-height: 3rem;
@@ -88,4 +98,111 @@ img {
   margin: 0 42.26190476% 0 auto;
   background: transparent;
   border: solid 1px #393e6b;
+}
+@media (max-width: 750px) {
+  .header {
+    padding: 0;
+  }
+  .header .gamb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 43px;
+    height: 45px;
+    margin: 52.5px 0 0 60px;
+  }
+  .header .gamb span {
+    width: 100%;
+    height: 5px;
+    background: #3fd6bc;
+  }
+  .header .reg {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: absolute;
+    width: 30%;
+    height: 100px;
+    margin: 0;
+    background: #fff;
+    top: 200px;
+  }
+  .header .reg p {
+    margin: 0;
+    height: 59.5px;
+    font-size: 110%;
+    padding: 10px 0 0 10px;
+  }
+  .header .reg p:first-child {
+    border-bottom: solid 1px grey;
+  }
+  .header .menu {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: absolute;
+    width: 30%;
+    height: 200px;
+    margin: 0;
+    background: #fff;
+    left: 0;
+  }
+  .header .menu p {
+    height: 50px;
+    padding: 10px 0 0 10px;
+    font-size: 110%;
+    border-bottom: solid 1px grey;
+    margin: 0;
+  }
+  .header .img {
+    width: 229px;
+    height: 57px;
+    margin: auto;
+    background: url(../img/logo_mob.png);
+  }
+  .install h3,
+  .install p {
+    margin: 90px 0 0 9.06666667%;
+  }
+  .install p {
+    width: 75%;
+    margin-top: 70px;
+    margin-bottom: 94px;
+  }
+  .install .price {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 212px;
+    margin-bottom: 77px;
+  }
+  .install .price button,
+  .install .price button:last-child {
+    width: 624px;
+    height: 90px;
+    margin: 0 0 0 9.06666667%;
+    border-radius: 45px;
+  }
 }

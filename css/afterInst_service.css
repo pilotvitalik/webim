@@ -7,6 +7,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  padding: 70px 0;
 }
 .afterInst h3 {
   margin: 0 0 0 19.64285714%;
