@@ -18,13 +18,216 @@
   z-index: 111;
 }
 .footer {
-  padding: 0 0 283px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  height: 283px;
+  padding: 0 0 0 0;
   background: url('../img/footer.png') no-repeat;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-.footer .copyright,
-.footer .contact,
+.footer .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  margin: 55px 0 0 4.16666667%;
+  width: 11.01190476%;
+  height: 100px;
+}
+.footer .copyright > div {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 37px;
+  background: url(../img/footer_logo.png) no-repeat;
+}
+.footer .copyright p {
+  display: inline-block;
+  margin: 20px 0 0 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 113.88888889%;
+  color: #adb2c4;
+}
+.footer .copyright p:last-child {
+  margin: 0;
+}
+.footer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: 26.78571429%;
+  height: 165px;
+  margin: 55px 0 0 30.35714286%;
+}
+.footer .contact > div p:last-child {
+  color: #adb2c4;
+}
+.footer .contact .telCom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 30px;
+  padding: 0;
+}
+.footer .contact .telCom div {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  background: url(../img/footer_phone.png) no-repeat;
+  background-position: -2px -2px;
+  border-radius: 50%;
+}
+.footer .contact .telCom p:last-child {
+  display: inline-block;
+  font-size: 208.33333333%;
+  line-height: 97.22222222%;
+  height: 30px;
+  margin: 0 0 0 3%;
+  color: #ffffff;
+}
+.footer .contact .telMsk,
+.footer .contact .telSpb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 45px;
+  margin: 15px 0 0 0;
+}
+.footer .contact .telMsk p,
+.footer .contact .telSpb p {
+  display: inline-block;
+  font-size: 111.11111111%;
+  line-height: 97.22222222%;
+  height: 13px;
+  margin: 0 0 0 0;
+  letter-spacing: 1.7px;
+}
+.footer .contact .telMsk p:first-child,
+.footer .contact .telSpb p:first-child {
+  height: 20px;
+  font-size: 152.77777778%;
+  line-height: 97.22222222%;
+}
+.footer .contact .telSpb {
+  margin-top: 25px;
+}
+.footer .contact p {
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
+  letter-spacing: 1px;
+}
 .footer .time {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: 26.78571429%;
+  height: 200px;
+  margin: 55px 6.25% 0 auto;
+}
+.footer .time p:first-child,
+.footer .time p:nth-child(2),
+.footer .time p:nth-child(3) {
+  display: inline-block;
+  width: 100%;
+  height: 17px;
+  font-size: 133.33333333%;
+  line-height: 88.88888889%;
+  margin: 0;
+}
+.footer .time p:nth-child(2) {
+  margin-top: 10px;
+}
+.footer .time p:nth-child(3) {
+  width: 100%;
+  height: 15px;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  color: #adb2c4;
+}
+.footer .time p {
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
+}
+.footer .time .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 40%;
+  height: 20px;
+  margin-top: 18px;
+}
+.footer .time .social .socialItem-VK {
+  width: 26px;
+  height: 20px;
+  background: url(../img/vk.png) no-repeat;
+  background-position: 0px 2px;
+}
+.footer .time .social .socialItem-Face {
+  width: 13px;
+  height: 20px;
+  background: url(../img/fc.png) no-repeat;
+  background-position: 0px 0px;
+}
+.footer .time .social .socialItem-Twit {
+  width: 22px;
+  height: 20px;
+  background: url(../img/tw.png) no-repeat;
+  background-position: 0px 0px;
+}
+.footer .time .social .socialItem-Skype {
+  width: 20px;
+  height: 20px;
+  background: url(../img/sk.png) no-repeat;
+  background-position: 0px 0px;
+}
+.footer > div:last-child {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-top: 225px;
+  margin-right: 2.67857143%;
+  background: url(../img/footer_mes.png) no-repeat;
+  background-position: -2px -2px;
+  border-radius: 50%;
 }

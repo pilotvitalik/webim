@@ -1,3 +1,9 @@
+@font: 2.6vw;
+@newF: 100/36%;
+@width: 100/1680%;
+@bdef: solid 1px red;
+
+
 //========================================
 //	Styles for background headerfooter
 //========================================
@@ -15,12 +21,176 @@
 	z-index: 111;
 }
 .footer{
-	padding: 0 0 283px 0;
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	height: 283px;
+	padding: 0 0 0 0;
 	background: url('../img/footer.png') no-repeat;
 	box-shadow: none;
-	.copyright,
-	.contact,
+	.copyright{
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		margin: 55px 0 0 70*@width;
+		width: 185*@width;
+		height: 100px;
+		&>div{
+			display: block;
+			position: relative;
+			width: 100%;
+			height: 37px;
+			background: url(../img/footer_logo.png) no-repeat;
+		}
+		p{
+			display: inline-block;
+			margin: 20px 0 0 0;
+			font-family: 'Ubuntu',sans-serif;
+			font-size: 41*@newF;
+			color: #adb2c4;
+		}
+		p:last-child{
+			margin: 0;
+		}
+	}
+	.contact{
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		width: 450*@width;
+		height: 165px;
+		margin: 55px 0 0 510*@width;
+		&>div{
+			p:last-child{
+				color: #adb2c4;
+			}
+		}
+		.telCom{
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			height: 30px;
+			padding: 0;
+			div{
+				width: 30px;
+				height: 30px;
+				margin: 0;
+				background: url(../img/footer_phone.png) no-repeat;
+				background-position: -2px -2px;
+				border-radius: 50%;
+			}
+			p:last-child{
+				display: inline-block;
+				font-size: 75*@newF;
+				line-height: 35*@newF;
+				height: 30px;
+				margin: 0 0 0 3%;
+				color: #ffffff;
+			}
+		}
+		.telMsk,
+		.telSpb{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 45px;
+			margin: 15px 0 0 0;
+			p{
+				display: inline-block;
+				font-size: 40*@newF;
+				line-height: 35*@newF;
+				height: 13px;
+				margin: 0 0 0 0;
+				letter-spacing: 1.7px;
+			}
+			p:first-child{
+				height: 20px;
+				font-size: 55*@newF;
+				line-height: 35*@newF;
+			}
+		}
+		.telSpb{
+			margin-top: 25px;
+		}
+		p{
+			font-family: 'Ubuntu',sans-serif;
+			color: #fff;
+			letter-spacing: 1px;
+		}
+	}
 	.time{
-		display: none;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		width: 450*@width;
+		height: 200px;
+		margin: 55px 105*@width 0 auto;
+		p:first-child,
+		p:nth-child(2),
+		p:nth-child(3){
+			display: inline-block;
+			width: 100%;
+			height: 17px;
+			font-size: 48*@newF;
+			line-height: 32*@newF;
+			margin: 0;
+		}
+		p:nth-child(2){
+			margin-top: 10px
+		}
+		p:nth-child(3){
+			width: 100%;
+			height: 15px;
+			letter-spacing: 2px;
+			margin-top: 20px;
+			color: #adb2c4;
+		}
+		p{
+			font-family: 'Ubuntu',sans-serif;
+			color: #fff;
+		}
+		.social{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			width: 40%;
+			height: 20px;
+			margin-top: 18px;
+			.socialItem-VK{
+				width: 26px;
+				height: 20px;
+				background: url(../img/vk.png) no-repeat;
+				background-position: 0px 2px;
+			}
+			.socialItem-Face{
+				width: 13px;
+				height: 20px;
+				background: url(../img/fc.png) no-repeat;
+				background-position: 0px 0px;
+			}
+			.socialItem-Twit{
+				width: 22px;
+				height: 20px;
+				background: url(../img/tw.png) no-repeat;
+				background-position: 0px 0px;
+			}
+			.socialItem-Skype{
+				width: 20px;
+				height: 20px;
+				background: url(../img/sk.png) no-repeat;
+				background-position: 0px 0px;
+			}
+		}
+	}
+	&>div:last-child{
+		display: block;
+		position: relative;
+		width: 50px;
+		height: 50px;
+		margin-top: 225px;
+		margin-right: 45*@width;
+		background: url(../img/footer_mes.png) no-repeat;
+		background-position: -2px -2px;
+		border-radius: 50%;
 	}
 }

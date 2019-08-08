@@ -1,0 +1,186 @@
+@font: 2.6vw;
+@newF: 100/36%;
+@width: 100/1680%;
+@bdef: solid 1px red;
+
+//=================================
+//		Styles .afterInst
+//=================================
+.afterInst{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	padding: 70px 0;
+	h3{
+		margin: 0 0 0 330*@width;
+	}
+	&>.p-font{
+		margin: 25px 0 0 330*@width;
+	}
+	&>div{
+		display: flex;
+		flex-direction: row;
+		position: relative;
+		width: 100%;
+		margin: 30px 0 0 0;
+		height: 69px;
+		&>div{
+			display: block;
+			position: relative;
+			width: 69px;
+			height: 69px;
+			margin: 0 0 0 330*@width;
+			overflow: hidden;
+			background: url(../img/sprite.png) no-repeat;
+			border-radius: 50%;
+		}
+		p{
+			display: inline-block;
+			position: relative;
+			margin: 25px 0 0 35*@width;
+			height: 20px;
+			line-height: 18px;
+		}
+		.stage1{
+		background-position: -165.5px -55px;
+		}
+		.stage2{
+			background-position: -251px -55px;
+		}
+		.stage3{
+			background-position: -4.3px -139px;
+		}
+		.stage4{
+			background-position: -82px -139px;
+		}
+		.stage5{
+			background-position: -164px -139px;
+		}
+		.stage6{
+			background-position: -248px -138px;
+		}
+	}
+	&>div:nth-child(3){
+		margin: 65px 0 0 0;
+	}
+	.price{
+		width: 100%;
+		margin: 77px 0 0 0;
+		button{
+			width: 330*@width;
+			height: 48px;
+			border-radius: 24px;
+			border: none;
+			outline: none;
+			margin: 0 0 0 330*@width;
+		}
+		button:first-child{
+			background: #2cd3b8;
+		}
+		button:last-child{
+			background: #3b4269;
+			margin: 0 0 0 30*@width;
+		}
+	}
+}
+.services{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 70px 0 180px 0;
+	h6{
+		display: inline-block;
+		width: 800*@width;
+		margin: 0 0 80px 330*@width;
+		font-weight: 200;
+	}
+	._1col,
+	._2col,
+	._3col{
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		justify-content: space-between;
+		width: 295*@width;
+		height: 210px;
+		margin: 0 0 0 330*@width;
+		padding: 0;
+		&>div{
+			display: flex;
+			flex-direction: row;
+			height: 40px;
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			p{
+				display: inline-block;
+				font-family: 'Ubuntu',sans-serif;
+				font-size: 20*@newF;
+				color: #00af99;
+				margin: 8px 0;
+			}
+			&>div{
+				width: 39px;
+				height: 39px;
+				background: url(../img/sprite.svg) no-repeat;
+				margin: 0 13% 0 0;
+				border-radius: 50%;
+			}
+			._1col-social{
+				background-position: -126px -66.7px;
+			}
+			._1col-mes{
+				background-position: -66px -66.7px;
+			}
+			._1col-chat{
+				background-position: -175px -10px;
+			}
+		}
+		
+	}
+	._2col{
+		width: 365*@width;
+		height: 120px;
+		margin: -210px 0 0 715*@width;
+			&>div{
+				._2col-feedback{
+					background-position: -4px -66.7px;
+				}
+				._2col-ya{
+					width: 42px;
+					height: 42px;
+					background-position: -281.8px -7px;
+				}
+			}
+			&>div:last-child{
+				height: 42px;
+			}
+	}
+	._3col{
+		width: 400*@width;
+		height: 120px;
+		margin: -122px 0 0 1175*@width;
+		&>div{
+			div{
+				margin: 0 30px 0 0;
+			}
+				._3col-mob{
+					background-position: -120px -10px;
+					width: 50px;
+					height: 50px;
+				}
+				._3col-email{
+					background-position: -225px -11px;
+				}
+			}
+		&>div:first-child{
+			height: 50px;
+			p{
+					height: 40px;
+					margin: 4px 0;
+			}
+		}
+	}
+}
