@@ -1,0 +1,201 @@
+//=================================
+//		Common :hover affect
+//=================================
+a:hover{
+	cursor: pointer;
+}
+button{
+	cursor: pointer;
+}
+a:hover:after{
+	content: '';
+	display: block;
+	position: absolute;
+}
+//=================================
+//		Header affect
+//=================================
+.reg{
+	a:hover{
+		color: #ffffff;
+	}
+}
+.menu{
+	a:hover{
+		color: #888ec3;
+	}
+	p{
+		padding-bottom: 45px;
+	}
+	a:hover:after{
+		width: 100%;
+		height: 3px;
+		top: 97%;
+		animation: line 1s linear forwards;
+		background: #373c6d;
+		}
+	@keyframes line{
+		from{width: 0%;}
+		to{width: 100%;}
+	}
+}
+//=================================
+//		EasyInst affect
+//=================================
+.inst-reg,
+.inst-HTML{
+	p{
+		width: auto;
+		padding-left: 20%;
+		padding-bottom: 3px;
+	}
+	a:hover:after{
+		width: 83%;
+		height: 2px;
+		top: 97%;
+		background: #00af99;
+		}
+}
+.inst-HTML{
+	a:hover:after{
+		width: 75%;
+	}
+}
+//=================================
+//		installHTML affect
+//=================================
+.installHTML{
+	div{
+		a:hover:after{
+			width: 42%;
+			height: 2px;
+			top: 41%;
+			background: #00af99;
+		}
+	}
+	div:nth-child(3),
+	div:nth-child(5){
+		a:hover:after{
+			width: 44.7%;
+		}
+	}
+	div:nth-child(5){
+		a:hover:after{
+			width: 45.7%;
+		}
+	}
+	div:nth-child(6){
+		a:hover:after{
+			width: 39%;
+		}
+	}
+}
+//=================================
+//		installApp affect
+//=================================
+.installApp{
+	div{
+		a:hover:after{
+			width: 43.7%;
+			height: 2px;
+			top: 30	%;
+			background: #00af99;
+	}
+	}
+	div:nth-child(4){
+		a:hover:after{
+			width: 44.5%;
+		}
+	}
+	div:nth-child(5){
+		a:hover:after{
+			width: 44.1%;
+		}
+	}
+	div:nth-child(6){
+		a:hover:after{
+			width: 34.2%;
+		}
+	}
+	div:nth-child(7){
+		a:hover:after{
+			width: 34.7%;
+		}
+	}
+}
+//=================================
+//		afterInst affect
+//=================================
+b{
+	margin-right: 1%;
+}
+//=================================
+//		services affect
+//=================================
+._1col{
+	div{
+		a:hover:after{
+			width: 68.6%;
+			height: 2px;
+			top: 14%;
+			background: #00af99;
+		}
+	}
+	div:nth-child(2){
+		a:hover:after{
+			width: 56.5%;
+			top: 54.5%;
+		}
+	}
+	div:nth-child(3){
+		a:hover:after{
+			width: 36%;
+			top: 94.5%;
+		}
+	}
+}
+._2col{
+	div{
+		a:hover:after{
+			width: 74%;
+			height: 2px;
+			top: 26%;
+			background: #00af99;
+		}
+	}
+	div:last-child{
+		a:hover:after{
+			width: 51.5%;
+			top: 90%;
+		}
+	}
+}
+._3col{
+	div{
+		a:hover:after{
+			width: 73%;
+			height: 2px;
+			top: 40%;
+			background: #00af99;
+		}
+		a:hover:before{
+			content: '';
+			display: block;
+			position: absolute;
+			width: 35.7%;
+			height: 2px;
+			top: 20%;
+			background: #00af99;
+		}
+	}
+	div:last-child{
+		a:hover:after{
+			width: 55.9%;
+			top: 91%;
+		}
+		a:hover:before{
+			display: none;
+		}
+	}
+}
+		

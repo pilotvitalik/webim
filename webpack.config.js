@@ -18,33 +18,30 @@ let conf = {
 				exclude: '/node_modules/'
 			},
 			{
-				test: /\.less$/,
+				test: /\.css$/,
 				use: [
 						'style-loader',
 						'css-loader',
 						'less-loader'
 				]
 			},
-			{
-      			test: /\.(jpe?g|png|gif|svg)$/i,
-      			use: [
-			        'url-loader?limit=10000',
-			        'img-loader'
-			      ]
-			    },
-			   {
-        test: /\.(png|jpg|gif)$/i,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 8192,
-            },
-          },
-        ],
-      },
 		]
-	}
+	},
+	plugins: [
+			new MergeIntoSingleFilePlugin({
+				files: {
+					 "vendor.css": [
+					 	"css/dinamic.css",
+					 	"css/afterInst_services_mob.css",
+					 	"css/afterInst_service.css",
+					 	"css/easyInst_installHTML_installApp.css",
+					 	"css/background_header_footerAll.css",
+					 	"css/header_install.css",
+					 	"css/style.css",
+					 	]
+					}
+				})
+			],
 };
 
 module.exports = conf;

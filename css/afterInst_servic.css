@@ -173,7 +173,7 @@
 .services ._2col {
   width: 21.72619048%;
   height: 120px;
-  margin: -210px 0 0 42.55952381%;
+  margin: -210px 0 0 44.64285714%;
 }
 .services ._2col > div ._2col-feedback {
   background-position: -4px -66.7px;
@@ -189,7 +189,8 @@
 .services ._3col {
   width: 23.80952381%;
   height: 120px;
-  margin: -122px 0 0 69.94047619%;
+  margin: -122px 0 0 71.42857143%;
+  border: solid 1px red;
 }
 .services ._3col > div div {
   margin: 0 30px 0 0;

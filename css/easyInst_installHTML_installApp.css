@@ -35,7 +35,6 @@
 .easyInst > div .inst-reg > div,
 .easyInst > div .inst-HTML > div {
   display: block;
-  background: url(../img/sprite.svg) no-repeat;
   background-position: -4px -4px;
 }
 .easyInst > div .inst-reg p,
@@ -70,7 +69,6 @@
   display: block;
   width: 51px;
   height: 54px;
-  background: url(../img/sprite.svg) no-repeat;
   background-position: -58px -3px;
   border: none;
   margin: 45px 0 0 35px;
@@ -78,7 +76,7 @@
 }
 .easyInst > div .inst-HTML p {
   display: inline-block;
-  padding: 0 0 0 35px;
+  padding-left: 35px;
   margin: 25px 0 0 0;
 }
 .easyInst > div .inst-reg span:last-child {
@@ -89,7 +87,6 @@
 }
 .easyInst > div .inst-reg p {
   display: inline-block;
-  padding: 0 0 0 35px;
   margin: 32px 0 0 0;
 }
 .installHTML {
@@ -136,10 +133,6 @@
   margin: 0 0 0 19.64285714%;
   line-height: 40px;
 }
-.installApp h3 br:nth-child(2),
-.installApp p br:nth-child(2) {
-  display: none;
-}
 .installApp p {
   margin: 2.2% 0 0 19.64285714%;
   line-height: 24px;
@@ -177,7 +170,7 @@
 @media (max-width: 750px) {
   .easyInst h3 {
     height: 85px;
-    margin: 60px 0 93px 9.06666667%;
+    margin: 60px 0 60px 9.06666667%;
     padding: 0;
     line-height: 45px;
     letter-spacing: 2.4px;
@@ -239,6 +232,9 @@
     line-height: 35px;
     margin-left: 14.26666667%;
   }
+  .installHTML div .p-font--h5 {
+    font-weight: 100 !important;
+  }
   .installHTML div p {
     width: 75%;
     margin-top: 35px;
@@ -251,14 +247,14 @@
     padding: 0 0 60px 0;
   }
   .installApp h3 {
-    margin: 94px 0 61px 9.06666667%;
+    margin: 94px 0 30px 9.06666667%;
     line-height: 50px;
     letter-spacing: 2.4px;
   }
   .installApp p {
     width: 75%;
     margin-left: 9.06666667%;
-    margin-bottom: 22px;
+    margin-bottom: 45px;
   }
   .installApp div {
     margin-top: 70px;
@@ -276,9 +272,13 @@
     margin-left: 14.26666667%;
   }
   .installApp div p {
-    width: 75%;
+    width: 78%;
     margin-top: 35px;
     margin-left: 14.26666667%;
+    font-weight: 100;
+  }
+  .installApp div p b {
+    font-weight: 200;
   }
   .installApp div:first-child {
     margin: 0;
@@ -302,7 +302,17 @@
   .installHTML > div h5 br {
     display: none;
   }
+  .installApp h3 br:first-child,
+  .installApp h3 br:nth-child(3) {
+    display: none;
+  }
   .installApp div h5 br {
+    display: none;
+  }
+  .installApp div p b {
+    margin: 0;
+  }
+  .installApp div:last-child p br {
     display: none;
   }
 }

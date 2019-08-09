@@ -6,15 +6,22 @@
 //=================================
 //		Styles .afterInst
 //=================================
+@media(min-width: 751px){
 .afterInst{
 	display: flex;
 	flex-direction: column;
 	position: relative;
+	padding: 0 0 60px 0;
 	h3{
-		margin: 0 0 0 330*@width;
-	}
+		margin: 74px 0 0 330*@width;
+		}
 	&>.p-font{
 		margin: 25px 0 0 330*@width;
+		}
+	p{
+		br{
+			display: none;
+		}
 	}
 	&>div{
 		display: flex;
@@ -30,7 +37,6 @@
 			height: 69px;
 			margin: 0 0 0 330*@width;
 			overflow: hidden;
-			background: url(../img/sprite.png) no-repeat;
 			border-radius: 50%;
 		}
 		p{
@@ -39,6 +45,7 @@
 			margin: 25px 0 0 35*@width;
 			height: 20px;
 			line-height: 18px;
+			width: 70%;
 		}
 		.stage1{
 		background-position: -165.5px -55px;
@@ -123,7 +130,6 @@
 			&>div{
 				width: 39px;
 				height: 39px;
-				background: url(../img/sprite.svg) no-repeat;
 				margin: 0 13% 0 0;
 				border-radius: 50%;
 			}
@@ -142,7 +148,7 @@
 	._2col{
 		width: 365*@width;
 		height: 120px;
-		margin: -210px 0 0 715*@width;
+		margin: -210px 0 0 750*@width;
 			&>div{
 				._2col-feedback{
 					background-position: -4px -66.7px;
@@ -160,7 +166,7 @@
 	._3col{
 		width: 400*@width;
 		height: 120px;
-		margin: -122px 0 0 1175*@width;
+		margin: -122px 0 0 1225*@width;
 		&>div{
 			div{
 				margin: 0 30px 0 0;
@@ -169,8 +175,10 @@
 					background-position: -120px -10px;
 					width: 50px;
 					height: 50px;
+					margin-right: 7%;
 				}
 				._3col-email{
+					margin-left: 1.5%;
 					background-position: -225px -11px;
 				}
 			}
@@ -182,4 +190,5 @@
 			}
 		}
 	}
+}
 }

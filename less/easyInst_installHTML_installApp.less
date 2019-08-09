@@ -34,7 +34,6 @@
 			margin: 0 0 0 285*@width;
 				&>div{
 					display: block;
-					background: url(../img/sprite.svg) no-repeat;
 					background-position: -4px -4px;
 				}
 				p,
@@ -66,7 +65,6 @@
 				display: block;
 				width: 51px;
 				height: 54px;
-				background: url(../img/sprite.svg) no-repeat;
 				background-position: -58px -3px;
 				border: none;
 				margin: 45px 0 0 35px;
@@ -74,7 +72,7 @@
 			}
 			p{
 				display: inline-block;
-				padding: 0 0 0 35px;
+				padding-left: 35px;
 				margin: 25px 0 0 0;
 			}
 		}
@@ -87,7 +85,6 @@
 			}
 			p{
 				display: inline-block;
-				padding: 0 0 0 35px;
 				margin: 32px 0 0 0;
 			}			
 		}
@@ -134,9 +131,6 @@
 	h3,p{
 		margin: 0 0 0 330*@width;
 		line-height: 40px;
-		br:nth-child(2){
-			display: none;
-		}
 	}
 	p{
 		margin: 2.2% 0 0 330*@width;
@@ -181,7 +175,7 @@
 	.easyInst{
 		h3{
 			height: 85px;
-			margin: 60px 0 93px 68*@width;
+			margin: 60px 0 60px 68*@width;
 			padding: 0;
 			line-height: 45px;
 			letter-spacing: 2.4px;
@@ -239,6 +233,9 @@
 				line-height: 35px;
 				margin-left: 107*@width;
 			}
+			.p-font--h5{
+				font-weight: 100 !important;
+			}
 			p{
 				width: 75%;
 				margin-top: 35px;
@@ -253,14 +250,14 @@
 	.installApp{
 		padding: 0 0 60px 0;
 		h3{
-			margin: 94px 0 61px 68*@width;
+			margin: 94px 0 30px 68*@width;
 			line-height: 50px;
 			letter-spacing: 2.4px;
 		}
 		p{
 			width: 75%;
 			margin-left: 68*@width;
-			margin-bottom: 22px;
+			margin-bottom: 45px;
 		}
 		div{
 			margin-top: 70px;
@@ -277,9 +274,13 @@
 				margin-left: 107*@width;
 			}
 			p{
-				width: 75%;
+				width: 78%;
 				margin-top: 35px;
 				margin-left: 107*@width;
+				font-weight: 100;
+				b{
+					font-weight: 200;
+				}
 			}
 
 		}
@@ -328,13 +329,30 @@
 		}
 	}
 	.installApp{
+		h3{
+			br:first-child,
+			br:nth-child(3){
+				display: none;
+			}
+		}
 		div{
 			h5{
 				br{
 				display: none;
 			}	
 			}
-			
+			p{
+				b{
+					margin: 0;
+				}
+			}
+		}
+		div:last-child{
+			p{
+				br{
+					display: none;
+				}
+			}
 		}
 	}
 }

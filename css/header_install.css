@@ -39,7 +39,6 @@
   margin: 0;
 }
 .img {
-  background: url(../img/header_logo.png) no-repeat;
   width: 116px;
   height: 30px;
   margin: 0 4.16666667% 0 1.78571429%;
@@ -66,9 +65,6 @@
 }
 .install p {
   margin: 3.2% 33.33333333% 0 19.64285714%;
-}
-.install p br {
-  display: none;
 }
 .install div {
   display: -webkit-box;
@@ -176,7 +172,6 @@
     width: 229px;
     height: 57px;
     margin: auto;
-    background: url(../img/logo_mob.png);
   }
   .install h3,
   .install p {
@@ -186,6 +181,7 @@
     width: 75%;
     margin-top: 70px;
     margin-bottom: 94px;
+    line-height: 40px;
   }
   .install .price {
     -webkit-box-orient: vertical;
@@ -204,5 +200,10 @@
     height: 90px;
     margin: 0 0 0 9.06666667%;
     border-radius: 45px;
+  }
+}
+@media (min-width: 751px) {
+  .install p br {
+    display: none;
   }
 }

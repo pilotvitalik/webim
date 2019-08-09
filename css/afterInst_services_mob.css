@@ -15,6 +15,10 @@
   line-height: 50px;
   letter-spacing: 2.4px;
 }
+.afterInst p {
+  line-height: 30px;
+  margin: 40px 0 30px 9.06666667% !important;
+}
 .afterInst > .p-font {
   margin: 58px 0 0 9.06666667%;
 }
@@ -34,6 +38,7 @@
   width: 100%;
   margin: 40px 0 0 0;
   height: 100px;
+  padding: 0 !important;
 }
 .afterInst .icon div {
   display: block;
@@ -41,7 +46,7 @@
   width: 69px;
   height: 69px;
   padding: 0;
-  margin: 0 6% 0 9.06666667%;
+  margin: 0 2% 0 12%;
   background: url(../img/sprite.png) no-repeat;
   border-radius: 50%;
   -webkit-transform: scale(1.47826, 1.47826);
@@ -51,10 +56,20 @@
 .afterInst .icon p {
   display: inline-block;
   position: relative;
-  margin: 35px 0 0 0;
-  height: 20px;
-  line-height: 18px;
+  margin-top: 0 !important;
+  padding-top: 20px;
+  height: 80px;
+  font-size: 43.75% !important;
+  line-height: 30px;
   font-size: 41.66666667%;
+  width: 60%;
+}
+.afterInst .icon p b {
+  margin-right: 3%;
+}
+.afterInst .icon .afterInst--icon--p {
+  padding-top: 40px;
+  height: 60px;
 }
 .afterInst .icon .stage1 {
   width: 69px;
@@ -85,7 +100,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  margin: 127px 0 0 0;
+  margin: 100px 0 0 0;
 }
 .afterInst .price button {
   width: 83%;
@@ -190,7 +205,7 @@
   -webkit-transform: scale(1.71794, 1.71794);
           transform: scale(1.71794, 1.71794);
   background: url(../img/sprite.svg) no-repeat;
-  margin: 0 5.6% 0 9%;
+  margin: 0 5.6% 0 11%;
   border-radius: 50%;
   top: 15px;
 }
@@ -233,7 +248,7 @@
   height: 231px;
 }
 .services .servicesCom ._3col > div div {
-  margin: 0 4% 0 9%;
+  margin: 0 4% 0 11%;
 }
 .services .servicesCom ._3col > div ._3col-mob {
   background-position: -120px -10px;
