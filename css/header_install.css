@@ -107,13 +107,13 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    position: absolute;
+    position: relative;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 43px;
     height: 45px;
-    margin: 52.5px 0 0 60px;
+    margin: 52.5px 1% 0 8%;
   }
   .header .gamb span {
     width: 100%;
@@ -196,7 +196,7 @@
   }
   .install .price button,
   .install .price button:last-child {
-    width: 624px;
+    width: 82.5%;
     height: 90px;
     margin: 0 0 0 9.06666667%;
     border-radius: 45px;
