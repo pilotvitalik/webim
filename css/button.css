@@ -1,0 +1,46 @@
+.install div button,
+.afterInst .price button{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+@media(min-width: 1100px){
+.install div button,
+.afterInst .price button{
+	height: 48px;
+}
+}
+@media(max-width: 1099px){
+.install div button,
+.afterInst .price button{
+	height: 40px;
+}
+}
+@media(max-width: 899px){
+.install div button,
+.afterInst .price button{
+	height: 30px;
+}
+}
+@media(max-width: 750px){
+.install div button,
+.afterInst .price button{
+	height: 90px;
+	font-size: 1.3rem;
+}
+}
+@media(max-width: 600px){
+.install div button,
+.afterInst .price button{
+	height: 70px;
+	font-size: 1.1rem;
+}
+}
+@media(max-width: 400px){
+.install div button,
+.afterInst .price button{
+	height: 50px;
+	font-size: 0.9rem;
+}
+}
